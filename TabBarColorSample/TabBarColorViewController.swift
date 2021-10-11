@@ -13,9 +13,6 @@ class TabBarColorViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // fontの設定
-        let fontFamily: UIFont! = UIFont.systemFont(ofSize: 15) //フォントサイズ：15
-        
         // 背景色の設定
         if #available(iOS 15.0, *) {
             let appearance = UITabBarAppearance()
@@ -29,7 +26,7 @@ class TabBarColorViewController: UITabBarController {
         
         
         // 非選択時の設定
-        let nomalAttributes = [NSAttributedString.Key.font: fontFamily, NSAttributedString.Key.foregroundColor: UIColor.white] //白色
+        let nomalAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white] //白色
         // タイトルテキストカラーの設定
         UITabBarItem.appearance().setTitleTextAttributes(nomalAttributes as [NSAttributedString.Key : Any], for: UIControl.State.normal)
         // アイコンカラー（画像）の設定（非選択時での画像のカラーはコードだけでは書けないため、元の色にするためにこのコードを書く）
@@ -44,7 +41,7 @@ class TabBarColorViewController: UITabBarController {
         
         // 選択時の設定
         let selectedColor:UIColor = UIColor.yellow
-        let selectedAttributes = [NSAttributedString.Key.font: fontFamily, NSAttributedString.Key.foregroundColor: selectedColor]
+        let selectedAttributes = [NSAttributedString.Key.foregroundColor: selectedColor]
         // タイトルテキストカラーの設定
         UITabBarItem.appearance().setTitleTextAttributes(selectedAttributes as [NSAttributedString.Key : Any], for: UIControl.State.selected)
         // アイコンカラーの設定
