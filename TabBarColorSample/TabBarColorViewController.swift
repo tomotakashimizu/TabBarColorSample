@@ -17,7 +17,15 @@ class TabBarColorViewController: UITabBarController {
         let fontFamily: UIFont! = UIFont.systemFont(ofSize: 15) //フォントサイズ：15
         
         // 背景色の設定
-        UITabBar.appearance().barTintColor = UIColor.red //赤
+        if #available(iOS 15.0, *) {
+            let appearance = UITabBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = UIColor.red
+            tabBar.standardAppearance = appearance
+            tabBar.scrollEdgeAppearance = tabBar.standardAppearance
+        } else {
+            UITabBar.appearance().barTintColor = UIColor.red
+        }
         
         
         // 非選択時の設定
