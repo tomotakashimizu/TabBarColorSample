@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Od-9O-fdx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Od-9O-fdx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,12 +26,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="abd-rU-Eb3"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="99N-im-Odf" firstAttribute="centerY" secondItem="wML-Gy-ye0" secondAttribute="centerY" id="Ghv-kP-IBu"/>
                             <constraint firstItem="99N-im-Odf" firstAttribute="centerX" secondItem="wML-Gy-ye0" secondAttribute="centerX" id="kva-WZ-DLA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="abd-rU-Eb3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="L5y-dA-Qot"/>
                 </viewController>
@@ -47,7 +48,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Box" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcr-mh-NLa">
-                                <rect key="frame" x="174.5" y="424" width="65" height="48"/>
+                                <rect key="frame" x="175" y="424" width="64" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="LQa-1T-qVQ"/>
                                 </constraints>
@@ -56,12 +57,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6mm-lI-LKy"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gcr-mh-NLa" firstAttribute="centerY" secondItem="Tug-eP-CaL" secondAttribute="centerY" id="D2Z-LD-QFC"/>
                             <constraint firstItem="gcr-mh-NLa" firstAttribute="centerX" secondItem="Tug-eP-CaL" secondAttribute="centerX" id="W9n-v4-fIg"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6mm-lI-LKy"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="iKX-MB-FAr"/>
                 </viewController>
@@ -87,12 +88,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="jz3-OD-8jb"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Sei-dc-ag7" firstAttribute="centerX" secondItem="UMH-DJ-x3o" secondAttribute="centerX" id="gMw-ON-PUY"/>
                             <constraint firstItem="Sei-dc-ag7" firstAttribute="centerY" secondItem="UMH-DJ-x3o" secondAttribute="centerY" id="sLT-Wd-66G"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="jz3-OD-8jb"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="u2B-he-N4G"/>
                 </viewController>
